@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Maner 教程</title>
+    <link rel="icon" href="/_images/logo.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: "maner 教程",
+        repo: "",
+        loadSidebar: true,
+        subMaxLevel: 2, //目录最大级数
+        homepage: "情景演练.md",
+        auto2top: true,
+        logo: "/_images/logo.svg",
+        search: {
+          noData: {
+            "/": "没有结果!",
+          },
+          paths: "auto",
+          placeholder: {
+            "/": "搜索",
+          },
+          pathNamespaces: ["/es", "/de-de", "/ru-ru", "/zh-cn"],
+        },
+        timeUpdater: {
+          text: ">最后更新时间: {docsify-updated}",
+          formatUpdated: "{YYYY}/{MM}/{DD}",
+          whereToPlace: "bottom",
+        },
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- 图片缩放 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+    <!-- PWA 离线化 -->
+    <!-- <script>
+      if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+      }
+    </script> -->
+    <!-- 更新时间 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.js"></script>
+  </body>
+</html>
